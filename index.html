@@ -38,11 +38,23 @@
 						store. Add your email below to stay up-to-date with announcements
 						and our launch deals.
 					</p>
-					<form action="">
-						<div class="custom-input">
-							<input type="text" placeholder="Email Address" />
-							<button>Submit</button>
+					<form id="form" action="/" novalidate>
+						<div class="custom-input" id="input">
+							<input
+								id="email"
+								type="email"
+								required
+								placeholder="Email Address"
+								autocomplete="off"
+								autofocus
+								onkeyup="validation()"
+							/>
+
+							<button type="button">
+								<img src="./images/icon-arrow.svg" alt="Submit" />
+							</button>
 						</div>
+						<span id="text"></span>
 					</form>
 				</div>
 			</section>
@@ -60,5 +72,6 @@
 				>. Coded by <a href="#">Your Name Here</a>.
 			</p>
 		</footer> -->
+		<script src="./index.js"></script>
 	</body>
 </html>
