@@ -1,7 +1,6 @@
 # Notes
 
 **gampang**
-- [ ] prob1
 - [x] px to rem (setting 10px === 1rem)
 - [ ] gradients name
 - [ ] font weight
@@ -9,7 +8,7 @@
 
 
 **susah**
-- [ ] img path (!live-server)
+- [x] img path (!live-server)
 - [x] media query
 
 **di luar project**
