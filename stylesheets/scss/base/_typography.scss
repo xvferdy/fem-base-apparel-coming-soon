@@ -1,11 +1,29 @@
+@use "../helpers/" as *;
+
 h1 {
 	font-size: 6.4rem;
-	line-height: 69px;
+	line-height: 6.9rem;
 	letter-spacing: 1.72rem;
+	@include display(tab-land) {
+		font-size: 4.7rem;
+		line-height: 5.3rem;
+		letter-spacing: 0.9rem;
+	}
+	@include display(tab-port) {
+		text-align: center;
+	}
+	@include display(sm-mobile) {
+		font-size: 3.1rem;
+		line-height: 3.9rem;
+	}
 }
 
 p {
 	font-size: 1.5rem;
 	line-height: 2.86rem;
 	letter-spacing: 0.05rem;
+	@include display(tab-port) {
+		text-align: center;
+		line-height: 2.4rem;
+	}
 }

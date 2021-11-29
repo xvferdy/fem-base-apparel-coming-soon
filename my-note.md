@@ -1,16 +1,15 @@
 # Notes
 
 **gampang**
-- [ ] prob1
-- [ ] px to rem (setting 10px === 1rem)
+- [x] px to rem (setting 10px === 1rem)
 - [ ] gradients name
 - [ ] font weight
-- [ ] color name variable
+- [x] color name variable
 
 
 **susah**
-- [ ] img path (!live-server)
-- [ ] media query
+- [x] img path (!live-server)
+- [x] media query
 
 **di luar project**
 - [ ] readme-template

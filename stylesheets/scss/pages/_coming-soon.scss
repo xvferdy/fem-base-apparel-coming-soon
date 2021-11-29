@@ -1,26 +1,37 @@
-@use "../helpers/colors" as *;
+@use "../helpers/" as *;
 
 .left-section {
-	flex-basis: 57%;
-	background: url(../../../images/bg-pattern-desktop.svg);
+	flex-basis: 62%;
+	background: url(../../images/bg-pattern-desktop.svg);
 	background-size: cover;
 	background-repeat: no-repeat;
-
-	// border: 2px solid red;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	gap: 133px;
-
-	padding: 65px 40px 0 15%;
-
+	gap: 13.3rem;
+	padding: 6.5rem 4rem 0 15%;
+	.logo {
+		@include display(mobile) {
+			margin-left: 4rem;
+		}
+	}
+	.hero-mobile {
+		display: none;
+		@include display(tab-port) {
+			display: block;
+		}
+		@include display(tab-port) {
+			width: 80%;
+		}
+		@include display(mobile) {
+			width: 100%;
+			margin-top: 4rem;
+		}
+	}
 	&__form {
-		// border: 2px solid red;
-		max-width: 450px;
-
+		max-width: 45rem;
 		h1 {
 			text-transform: uppercase;
-			// margin-bottom: 2rem;
 			margin-bottom: 2rem;
 			span {
 				color: $desaturated-red;
@@ -37,10 +48,6 @@
 			.custom-input {
 				height: 5.6rem;
 				position: relative;
-
-				// border: 1px solid lightgray;
-				// border-radius: 3rem;
-
 				input {
 					position: relative;
 					border: none;
@@ -59,12 +66,18 @@
 						font-size: 1.5rem;
 						letter-spacing: 0.05rem;
 					}
+					@include display(tab-land) {
+						font-weight: 300;
+					}
+					@include display(tab-port) {
+						font-size: 1.4rem;
+					}
 				}
 				button {
 					position: absolute;
 					right: 0;
 					background-image: $gradients-2;
-					width: 100px;
+					width: 10rem;
 					height: 100%;
 					cursor: pointer;
 					border: none;
@@ -74,9 +87,14 @@
 					&:hover {
 						opacity: 0.7;
 					}
+					&:hover::after {
+						opacity: 1;
+					}
+					@include display(mobile) {
+						width: 7.5rem;
+					}
 				}
 			}
-
 			span {
 				position: relative;
 				font-size: 1.4rem;
@@ -86,28 +104,48 @@
 				margin-top: 1.3rem;
 			}
 		}
-		form.invalid {
-			.custom-input {
+		.form--invalid {
+			button {
 				&::after {
 					content: "";
 					position: absolute;
+					opacity: 0.8;
 					width: 2.6rem;
 					height: 2.6rem;
 					bottom: 25%;
-					left: 67%;
+					right: 107%;
 					background: url(../../images/icon-error.svg);
 					background-repeat: no-repeat;
 				}
 			}
 		}
+		@include display(tab-port) {
+			width: 80%;
+		}
+		@include display(mobile) {
+			margin: 60px auto;
+			width: 85%;
+		}
+	}
+	@include display(tab-land) {
+		flex-basis: 55%;
+		padding: 6.5rem 4rem;
+	}
+	@include display(tab-port) {
+		flex-basis: 100%;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 8rem;
+	}
+	@include display(mobile) {
+		padding: 40px 0;
+		align-items: flex-start;
+		gap: 0;
 	}
 }
 
 .right-section {
-	// flex-basis: 50%;
 	flex-grow: 1;
-	// border: 2px solid red;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -116,8 +154,16 @@
 	img {
 		object-fit: cover;
 		height: 100%;
-		width: 90%;
+		width: 100%;
 		vertical-align: middle;
-		// padding-right: 10%;
+		@include display(tab-land) {
+			object-position: 50% 0;
+		}
+	}
+	@include display(tab-land) {
+		flex-basis: 45%;
+	}
+	@include display(tab-port) {
+		display: none;
 	}
 }
