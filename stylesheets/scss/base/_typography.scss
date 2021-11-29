@@ -22,10 +22,8 @@ p {
 	font-size: 1.5rem;
 	line-height: 2.86rem;
 	letter-spacing: 0.05rem;
-	@include display(tab-land) {
-		line-height: 2.4rem;
-	}
 	@include display(tab-port) {
 		text-align: center;
+		line-height: 2.4rem;
 	}
 }

@@ -13,11 +13,6 @@
 body {
 	box-sizing: border-box;
 	background-image: $gradients-1;
-	// background-color: #fff7f5;
-
-	// display: flex;
-	// justify-content: center;
-	// align-items: center;
 }
 
 html {
@@ -26,13 +21,6 @@ html {
 
 .container {
 	min-height: 100vh;
-
-	// width: 1440px;
 	display: flex;
 	justify-content: center;
-
-	// align-items: center;
-	// @include display(mobile) {
-	// 	padding: 0 24px;
-	// }
 }

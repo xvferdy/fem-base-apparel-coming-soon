@@ -52,14 +52,10 @@ p {
   line-height: 2.86rem;
   letter-spacing: 0.05rem;
 }
-@media only screen and (max-width: 1024px) {
-  p {
-    line-height: 2.4rem;
-  }
-}
 @media only screen and (max-width: 830px) {
   p {
     text-align: center;
+    line-height: 2.4rem;
   }
 }
 
@@ -71,8 +67,8 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 133px;
-  padding: 65px 40px 0 15%;
+  gap: 13.3rem;
+  padding: 6.5rem 4rem 0 15%;
 }
 @media only screen and (max-width: 415px) {
   .left-section .logo {
@@ -99,7 +95,7 @@ p {
   }
 }
 .left-section__form {
-  max-width: 450px;
+  max-width: 45rem;
 }
 .left-section__form h1 {
   text-transform: uppercase;
@@ -138,11 +134,21 @@ p {
   font-size: 1.5rem;
   letter-spacing: 0.05rem;
 }
+@media only screen and (max-width: 1024px) {
+  .left-section__form form .custom-input input {
+    font-weight: 300;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .left-section__form form .custom-input input {
+    font-size: 1.4rem;
+  }
+}
 .left-section__form form .custom-input button {
   position: absolute;
   right: 0;
   background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
-  width: 100px;
+  width: 10rem;
   height: 100%;
   cursor: pointer;
   border: none;
@@ -153,9 +159,12 @@ p {
 .left-section__form form .custom-input button:hover {
   opacity: 0.7;
 }
+.left-section__form form .custom-input button:hover::after {
+  opacity: 1;
+}
 @media only screen and (max-width: 415px) {
   .left-section__form form .custom-input button {
-    width: 75px;
+    width: 7.5rem;
   }
 }
 .left-section__form form span {
@@ -166,14 +175,14 @@ p {
   padding-left: 3rem;
   margin-top: 1.3rem;
 }
-.left-section__form .form--invalid .custom-input::after {
+.left-section__form .form--invalid button::after {
   content: "";
   position: absolute;
-  opacity: 1;
+  opacity: 0.8;
   width: 2.6rem;
   height: 2.6rem;
   bottom: 25%;
-  left: 67%;
+  right: 107%;
   background: url(../../images/icon-error.svg);
   background-repeat: no-repeat;
 }
@@ -190,8 +199,8 @@ p {
 }
 @media only screen and (max-width: 1024px) {
   .left-section {
-    flex-basis: 50%;
-    padding: 65px 40px;
+    flex-basis: 55%;
+    padding: 6.5rem 4rem;
   }
 }
 @media only screen and (max-width: 830px) {
@@ -231,7 +240,7 @@ p {
 }
 @media only screen and (max-width: 1024px) {
   .right-section {
-    flex-basis: 50%;
+    flex-basis: 45%;
   }
 }
 @media only screen and (max-width: 830px) {
