@@ -1,7 +1,7 @@
-@use "../helpers/colors" as *;
+@use "../helpers/" as *;
 
 .left-section {
-	flex-basis: 57%;
+	flex-basis: 62%;
 	background: url(../../../images/bg-pattern-desktop.svg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -13,6 +13,24 @@
 	gap: 133px;
 
 	padding: 65px 40px 0 15%;
+	.logo {
+		@include display(mobile) {
+			margin-left: 4rem;
+		}
+	}
+	.hero-mobile {
+		display: none;
+		@include display(tab-port) {
+			display: block;
+		}
+		@include display(tab-port) {
+			width: 80%;
+		}
+		@include display(mobile) {
+			width: 100%;
+			margin-top: 4rem;
+		}
+	}
 
 	&__form {
 		// border: 2px solid red;
@@ -74,6 +92,9 @@
 					&:hover {
 						opacity: 0.7;
 					}
+					@include display(mobile) {
+						width: 75px;
+					}
 				}
 			}
 
@@ -86,11 +107,12 @@
 				margin-top: 1.3rem;
 			}
 		}
-		form.invalid {
+		.form--invalid {
 			.custom-input {
 				&::after {
 					content: "";
 					position: absolute;
+					opacity: 1;
 					width: 2.6rem;
 					height: 2.6rem;
 					bottom: 25%;
@@ -100,12 +122,34 @@
 				}
 			}
 		}
+		@include display(tab-port) {
+			width: 80%;
+		}
+		@include display(mobile) {
+			margin: 60px auto;
+			width: 85%;
+		}
+	}
+	@include display(tab-land) {
+		flex-basis: 50%;
+		padding: 65px 40px;
+	}
+	@include display(tab-port) {
+		flex-basis: 100%;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 8rem;
+	}
+	@include display(mobile) {
+		padding: 40px 0;
+		align-items: flex-start;
+		gap: 0;
 	}
 }
 
 .right-section {
-	// flex-basis: 50%;
 	flex-grow: 1;
+
 	// border: 2px solid red;
 
 	display: flex;
@@ -116,8 +160,17 @@
 	img {
 		object-fit: cover;
 		height: 100%;
-		width: 90%;
+		width: 100%;
 		vertical-align: middle;
 		// padding-right: 10%;
+		@include display(tab-land) {
+			object-position: 50% 0;
+		}
+	}
+	@include display(tab-land) {
+		flex-basis: 50%;
+	}
+	@include display(tab-port) {
+		display: none;
 	}
 }

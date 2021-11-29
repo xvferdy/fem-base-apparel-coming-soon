@@ -25,8 +25,26 @@ html {
 
 h1 {
   font-size: 6.4rem;
-  line-height: 69px;
+  line-height: 6.9rem;
   letter-spacing: 1.72rem;
+}
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 4.7rem;
+    line-height: 5.3rem;
+    letter-spacing: 0.9rem;
+  }
+}
+@media only screen and (max-width: 830px) {
+  h1 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 321px) {
+  h1 {
+    font-size: 3.1rem;
+    line-height: 3.9rem;
+  }
 }
 
 p {
@@ -34,9 +52,19 @@ p {
   line-height: 2.86rem;
   letter-spacing: 0.05rem;
 }
+@media only screen and (max-width: 1024px) {
+  p {
+    line-height: 2.4rem;
+  }
+}
+@media only screen and (max-width: 830px) {
+  p {
+    text-align: center;
+  }
+}
 
 .left-section {
-  flex-basis: 57%;
+  flex-basis: 62%;
   background: url(../../../images/bg-pattern-desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -45,6 +73,30 @@ p {
   align-items: flex-start;
   gap: 133px;
   padding: 65px 40px 0 15%;
+}
+@media only screen and (max-width: 415px) {
+  .left-section .logo {
+    margin-left: 4rem;
+  }
+}
+.left-section .hero-mobile {
+  display: none;
+}
+@media only screen and (max-width: 830px) {
+  .left-section .hero-mobile {
+    display: block;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .left-section .hero-mobile {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .left-section .hero-mobile {
+    width: 100%;
+    margin-top: 4rem;
+  }
 }
 .left-section__form {
   max-width: 450px;
@@ -101,6 +153,11 @@ p {
 .left-section__form form .custom-input button:hover {
   opacity: 0.7;
 }
+@media only screen and (max-width: 415px) {
+  .left-section__form form .custom-input button {
+    width: 75px;
+  }
+}
 .left-section__form form span {
   position: relative;
   font-size: 1.4rem;
@@ -109,15 +166,48 @@ p {
   padding-left: 3rem;
   margin-top: 1.3rem;
 }
-.left-section__form form.invalid .custom-input::after {
+.left-section__form .form--invalid .custom-input::after {
   content: "";
   position: absolute;
+  opacity: 1;
   width: 2.6rem;
   height: 2.6rem;
   bottom: 25%;
   left: 67%;
   background: url(../../images/icon-error.svg);
   background-repeat: no-repeat;
+}
+@media only screen and (max-width: 830px) {
+  .left-section__form {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .left-section__form {
+    margin: 60px auto;
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .left-section {
+    flex-basis: 50%;
+    padding: 65px 40px;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .left-section {
+    flex-basis: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8rem;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .left-section {
+    padding: 40px 0;
+    align-items: flex-start;
+    gap: 0;
+  }
 }
 
 .right-section {
@@ -131,8 +221,23 @@ p {
 .right-section img {
   object-fit: cover;
   height: 100%;
-  width: 90%;
+  width: 100%;
   vertical-align: middle;
+}
+@media only screen and (max-width: 1024px) {
+  .right-section img {
+    object-position: 50% 0;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .right-section {
+    flex-basis: 50%;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .right-section {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
