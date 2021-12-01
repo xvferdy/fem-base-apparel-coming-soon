@@ -14,7 +14,7 @@
 	- [Links](#links)
 - [My process](#my-process)
 	- [Built with](#built-with)
-	- [What I learned](#what-i-learned)
+	- [What I learned](#what-i-learned-)
 	- [Continued development](#continued-development)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
@@ -47,7 +47,7 @@ Users should be able to:
 - HTML
 - Sass
 
-### What I learned
+### What I learned 🥳
 I found out how to resize `img` using `object-fit`
 ###### stylesheets/scss/pages/\_coming-soon.scss
 ```scss
