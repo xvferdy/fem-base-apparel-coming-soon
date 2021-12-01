@@ -23,6 +23,7 @@
 Your challenge is to build out this coming soon page and get it looking as close to the design as possible. You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
 **Preview** :eyeglasses:
+
 ![Design preview for the Base Apparel coming soon page coding challenge](./design/desktop-preview.jpg)
 
 ### The challenge
@@ -48,7 +49,7 @@ Users should be able to:
 
 ### What I learned
 I found out how to resize `img` using `object-fit`
-###### stylesheets/scss/pages/_coming-soon.scss
+###### stylesheets/scss/pages/\_coming-soon.scss
 ```scss
 img {
   object-fit: cover;
