@@ -70,5 +70,5 @@ img {
 - [Online Tutorials Youtube](https://www.youtube.com/watch?v=HzJngc-Se9Q "Online Tutorials Youtube")
 
 <h3 align="right">
-      <a href="#testimonials-grid-section">To Top ⤴️</a>
+      <a href="#base-apparel-coming-soon-page">To Top ⤴️</a>
 </h3>
