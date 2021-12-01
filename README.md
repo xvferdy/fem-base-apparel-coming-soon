@@ -37,8 +37,8 @@ Users should be able to:
 
 
 ### Links
-- Solution URL: [Add solution URL here]()
-- Live Site URL: Add live site URL here
+- Solution URL: https://www.frontendmentor.io/solutions/fembaseapparelcomingsoon-DstR0rnWE
+- Live Site URL: https://xvferdy.github.io/fem-base-apparel-coming-soon/
 
 ## My process
 > ⏱️ My estimate time for this challenge is 2 days
